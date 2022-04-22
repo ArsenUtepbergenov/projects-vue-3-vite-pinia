@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import { ref } from '@vue/reactivity'
+import { ref } from 'vue'
 
 const items = ref([
   { id: 0, title: 'Item A', list: 1 },

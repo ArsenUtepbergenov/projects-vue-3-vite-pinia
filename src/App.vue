@@ -2,22 +2,23 @@
   <div class="content">
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
-    <router-view v-slot="{ Component, route }">
+    <!-- <router-view v-slot="{ Component, route }">
       <transition
         :enter-active-class="route.meta.enterClass"
         :leave-active-class="route.meta.leaveClass"
       >
         <component :is="Component" />
       </transition>
-    </router-view>
+    </router-view> -->
+    <router-view />
   </div>
 </template>
 
 <style>
-.page {
+/* .page {
   position: absolute;
   top: 30px;
-}
+} */
 
 .content {
   width: 40%;
