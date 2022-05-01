@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/pages/Home.vue'
 import About from '@/pages/About.vue'
+import Articles from '@/pages/Articles.vue'
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
       enterClass: 'animate__animated animate__fadeInRight',
       leaveClass: 'animate__animated animate__fadeOutLeft'
     }
+  },
+  {
+    path: '/articles',
+    name: 'Articles',
+    component: Articles
   }
 ]
 
