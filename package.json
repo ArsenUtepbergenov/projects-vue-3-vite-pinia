@@ -1,6 +1,6 @@
 {
   "name": "projects-vue-3-vite-pinia",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "serve": "vite preview",
@@ -12,7 +12,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mdi/font": "5.9.55",
     "ml5": "^0.12.2",
     "pinia": "^2.0.13",
     "roboto-fontface": "*",
@@ -22,6 +21,7 @@
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
+    "@mdi/js": "^6.7.96",
     "@types/vue-router": "^2.0.0",
     "@types/webfontloader": "^1.6.34",
     "@vitejs/plugin-vue": "^2.3.1",

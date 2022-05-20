@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <section class="articles">
     <article>
-      <h1>My Article</h1>
+      <h1>My Articles</h1>
       <section v-for="(header, index) in headers" :key="header">
         <h2 :id="index">{{ header }}</h2>
         <p>
@@ -13,7 +13,15 @@
           first true generator on the Internet. It uses a dictionary of over 200 Latin words,
           combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
           reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
-          humour, or non-characteristic words etc.
+          humour, or non-characteristic words etc. There are many variations of passages of Lorem
+          Ipsum available, but the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable. If you are going to
+          use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
+          in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+          predefined chunks as necessary, making this the first true generator on the Internet. It
+          uses a dictionary of over 200 Latin words, combined with a handful of model sentence
+          structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
+          therefore always free from repetition, injected humour, or non-characteristic words etc.
         </p>
       </section>
     </article>
@@ -29,7 +37,7 @@
         </a>
       </div>
     </aside>
-  </main>
+  </section>
 </template>
 
 <script setup>
@@ -48,7 +56,7 @@ onMounted(() => {
       })
     },
     {
-      rootMargin: '0px 0px -90% 0px',
+      rootMargin: '0px 0px -70% 0px',
     },
   )
 
@@ -59,13 +67,12 @@ onMounted(() => {
 </script>
 
 <style scoped>
-main {
+section.articles {
   display: flex;
 }
 
 article {
   width: 75%;
-  margin-bottom: 500px;
 }
 
 aside {
@@ -73,9 +80,8 @@ aside {
 }
 
 aside > div {
-  position: sticky;
-  top: 20px;
-  padding-left: 2em;
+  position: fixed;
+  padding-left: 3em;
 }
 
 aside > div > a {
